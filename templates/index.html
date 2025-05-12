@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/style.css" />
+    <title>API to Excel</title>
+</head>
+
+<body>
+    <div id="top-div">
+        <p>API TO EXCEL</p>
+    </div>
+
+    <div id="main-div">
+        {% if error %}
+        <div id="error-message">{{ error }}</div>
+        {% endif %}
+        <label for="url-input">Enter API URL</label>
+        <form method="POST">
+            <input type="text" id="url-input" name="url" placeholder="https://api.example.com/data" />
+            <button type="submit" id="fetch-btn">Fetch Data</button>
+        </form>
+    </div>
+</body>
+
+
+</html>
+
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        const errorBox = document.getElementById('error-message');
+        if (errorBox) {
+            // Start shake animation is already triggered on load via CSS
+            setTimeout(() => {
+                errorBox.style.opacity = '0';
+                errorBox.style.transition = 'opacity 0.5s ease';
+                setTimeout(() => errorBox.remove(), 500); // Remove after fade out
+            }, 3000); // Hide after 3 seconds
+        }
+    });
+</script>
