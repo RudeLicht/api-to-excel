@@ -27,7 +27,7 @@ This project is a lightweight Flask-based web application that allows users to f
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/RudeLicht/api-to-excel
    cd project-folder
 2. Install dependencies
 ```bash
