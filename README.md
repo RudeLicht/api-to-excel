@@ -23,20 +23,6 @@ This project is a lightweight Flask-based web application that allows users to f
 
 ---
 
-## 📁 Project Structure
-
-project-folder/
-│
-├── apiToExcel.py # Core logic: fetch JSON, write to Excel
-├── app.py # Flask app to handle requests
-├── templates/
-│ └── index.html # Frontend form for URL input
-├── dataFiles/ # Stores generated Excel files
-└── README.md # Project documentation
-
-
----
-
 ## 🧑‍💻 How to Run Locally
 
 1. **Clone the repository**
